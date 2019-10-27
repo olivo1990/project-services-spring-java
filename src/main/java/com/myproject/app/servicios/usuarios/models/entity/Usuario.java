@@ -41,7 +41,7 @@ public class Usuario implements Serializable {
 	@Column(length = 60)
 	private String password;
 	
-	private Boolean enabled;
+	private Boolean enabled; 
 	
 	@ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 	@JoinTable(name="usuarios_roles", joinColumns= @JoinColumn(name="id_usuario"),
